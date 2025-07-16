@@ -35,7 +35,7 @@ This guide explains how to set up the Java Development Environment on your machi
 
 To run Java commands globally, set these environment variables.
 
-### ✨ (a) PATH Variable
+### (a) PATH Variable
 
 **Windows:**
 1. Open **Environment Variables** settings.
@@ -68,7 +68,7 @@ export PATH=/Library/Java/JavaVirtualMachines/jdk-XX/Contents/Home/bin:$PATH
 
 ---
 
-### ✨ (b) JAVA\_HOME Variable
+### (b) JAVA\_HOME Variable
 
 **Windows:**
 
