@@ -74,7 +74,6 @@ Welcome to the **Java Full Course**! This guide is designed to help you master J
 * Abstract Classes
 * Interfaces
 
----
 
 ## 📦 Core Java Concepts
 
@@ -108,7 +107,6 @@ Welcome to the **Java Full Course**! This guide is designed to help you master J
 * Thread Lifecycle
 * Synchronization
 
----
 
 ## 🌐 Advanced Java
 
@@ -141,7 +139,6 @@ Welcome to the **Java Full Course**! This guide is designed to help you master J
 * Event Handling
 * Layout Managers
 
----
 
 ## 🧪 Projects & Practice
 
@@ -161,7 +158,6 @@ Welcome to the **Java Full Course**! This guide is designed to help you master J
 * Hands-on Coding Practice (Leetcode, HackerRank)
 * Resume Building Tips for Java Developers
 
----
 
 ## ✅ Conclusion
 
