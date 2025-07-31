@@ -1,9 +1,3 @@
-# Keywords & Identifiers in Java
-
-Understanding **Keywords** and **Identifiers** is essential for writing syntactically correct Java programs. Here's a detailed explanation of both:
-
----
-
 ## Keywords in Java
 
 **Keywords** are **reserved words** in Java that have a predefined meaning in the language. These words are part of the Java syntax and **cannot be used as variable names, class names, or identifiers**.
@@ -42,7 +36,7 @@ int number = 5; // 'int' is a keyword
 
 ---
 
-## 🆔 Identifiers in Java
+## Identifiers in Java
 
 **Identifiers** are the **names** used for **variables, classes, methods, objects, and other elements** in your code. They are defined by the programmer.
 
