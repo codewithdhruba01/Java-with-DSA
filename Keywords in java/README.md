@@ -34,8 +34,6 @@ int number = 5; // 'int' is a keyword
 
 >  There are **50+ reserved keywords** in Java. Some like `goto` and `const` are reserved but not used.
 
----
-
 ## Identifiers in Java
 
 **Identifiers** are the **names** used for **variables, classes, methods, objects, and other elements** in your code. They are defined by the programmer.
