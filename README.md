@@ -2,8 +2,6 @@
 
 Welcome to the **Java Full Course**! This guide is designed to help you master Java programming from the very basics to advanced concepts. Follow each chapter step by step to become proficient in Java development.
 
----
-
 ## Basics of Java
 
 ### 1. Introduction to Java
@@ -43,8 +41,6 @@ Welcome to the **Java Full Course**! This guide is designed to help you master J
 * Loops: for, while, do-while
 * break and continue
 
----
-
 ## Object-Oriented Programming (OOP)
 
 ### 6. Classes and Objects
@@ -73,7 +69,6 @@ Welcome to the **Java Full Course**! This guide is designed to help you master J
 
 * Abstract Classes
 * Interfaces
-
 
 ## Core Java Concepts
 
