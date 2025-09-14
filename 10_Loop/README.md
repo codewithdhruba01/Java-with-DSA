@@ -1,11 +1,16 @@
-# 🔹 What is a Loop?
+# What is a Loop?
 
-A **loop** is a way to **repeat a block of code** multiple times until a certain condition is true (or false).
-> Instead of writing the same statement many times, we use loops.
+* In Java, there are three iteration statements: **for**, **while**, and **do-while**. These statements are also called **loops**.
+
+* A **loop** means repeating the same set of instructions again and again until a certain condition is true. When the condition becomes false, the loop stops.
+
+* Java provides different types of loops to handle different programming needs. So, no matter what kind of repetition is required, Java has a loop that can be used.
+
+> **In simple way:** A **loop** is a way to **repeat a block of code** multiple times until a certain condition is true (or false).
 
 ---
 
-# 🔹 Types of Loops in Java
+# Types of Loops in Java
 
 Java provides **3 main loops**:
 
@@ -168,7 +173,7 @@ public class ForEachExample {
 
 ---
 
-# 🔹 Loop Control Statements
+# Loop Control Statements
 
 1. **break** → exits the loop immediately.
 2. **continue** → skips the current iteration and moves to the next.
@@ -209,10 +214,108 @@ for(int i = 1; i <= 5; i++) {
 
 ---
 
-**Summary:**
+# 50 Loop Practice Questions (Java)
 
-* Use `for` → when you know how many times to repeat.
-* Use `while` → when repetitions depend on condition.
-* Use `do-while` → when code must run at least once.
-* Use `for-each` → for arrays/collections.
+This list covers **simple printing → number operations → patterns → advanced math problems**.
+If you solve all 50, you’ll become very strong in **loops + logic building** in Java.
 
+---
+
+## Easy (1–15) – Basic Loops Problems
+
+1. Print numbers from 1 to 10 using a loop.
+2. Print even numbers from 1 to 20.
+3. Print odd numbers from 1 to 20.
+4. Print numbers in reverse from 10 to 1.
+5. Print the multiplication table of a given number (e.g., 7).
+6. Find the sum of first 10 natural numbers.
+7. Find the sum of even numbers between 1 to 50.
+8. Find the sum of odd numbers between 1 to 50.
+9. Print the squares of numbers from 1 to 10.
+10. Print the cube of numbers from 1 to 5.
+11. Print the first 10 multiples of 5.
+12. Print alphabets A to Z using a loop.
+13. Print digits of a number (e.g., 12345 → 1, 2, 3, 4, 5).
+14. Find the factorial of a given number.
+15. Count the number of digits in a given number.
+
+---
+
+## Medium (16–35) – Pattern Problems
+
+16. Reverse a number (e.g., 123 → 321).
+17. Find the sum of digits of a number.
+18. Check if a number is palindrome (same forward & backward).
+19. Check if a number is Armstrong (e.g., 153 → 1³+5³+3³=153).
+20. Print Fibonacci series up to N terms.
+21. Find the GCD (Greatest Common Divisor) of two numbers.
+22. Find the LCM (Least Common Multiple) of two numbers.
+23. Print all prime numbers between 1 and 50.
+24. Check if a number is prime.
+25. Find the sum of first N prime numbers.
+26. Check if a number is perfect (sum of divisors = number).
+27. Print the factors of a number.
+28. Count the factors of a number.
+29. Print a right-angled triangle pattern of `*`.
+
+```
+*
+**
+***
+****
+```
+
+30. Print an inverted right-angled triangle pattern.
+
+```
+****
+***
+**
+*
+```
+
+31. Print a square pattern of stars (NxN).
+32. Print a pyramid pattern of stars.
+
+```
+   *
+  ***
+ *****
+```
+
+33. Print a diamond pattern of stars.
+34. Print a number pyramid.
+
+```
+   1
+  121
+ 12321
+```
+
+35. Print Floyd’s triangle.
+
+```
+1
+2 3
+4 5 6
+```
+
+---
+
+## Hard (36–50) – Advanced
+
+36. Print Pascal’s Triangle.
+37. Print prime factors of a number.
+38. Find HCF and LCM using loop (without formula).
+39. Find the power of a number (a^b) using loop.
+40. Convert a decimal number to binary using loop.
+41. Convert a binary number to decimal using loop.
+42. Check if a number is strong (sum of factorial of digits = number).
+43. Print all Armstrong numbers between 1 and 1000.
+44. Print all palindrome numbers between 1 and 1000.
+45. Print all perfect numbers between 1 and 1000.
+46. Generate a multiplication table from 1 to 10 using nested loops.
+47. Print the pattern of a hollow square.
+48. Print a hollow pyramid using stars.
+49. Print the pattern of a chessboard (8x8).
+50. Generate the first N rows of Pascal’s Triangle (advanced version).
