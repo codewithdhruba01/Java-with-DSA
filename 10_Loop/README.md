@@ -1,4 +1,4 @@
-# What is a Loop?
+# Loop
 
 * In Java, there are three iteration statements: **for**, **while**, and **do-while**. These statements are also called **loops**.
 
@@ -8,7 +8,6 @@
 
 > **In simple way:** A **loop** is a way to **repeat a block of code** multiple times until a certain condition is true (or false).
 
----
 
 # Types of Loops in Java
 
@@ -20,7 +19,6 @@ Java provides **3 main loops**:
 
 Also, there’s an **enhanced for loop (for-each)** for arrays/collections.
 
----
 
 ## 1. for loop
 
@@ -61,8 +59,6 @@ Hello 3
 Hello 4
 Hello 5
 ```
-
----
 
 ## 2. `while loop`
 
