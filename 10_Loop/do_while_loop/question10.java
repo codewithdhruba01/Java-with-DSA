@@ -1,4 +1,4 @@
-public class question1 {
+public class question10 {
     public static void main (String args[]){
         int i = 0; //initialization
         do{
