@@ -134,7 +134,6 @@ Welcome to the **Java Full Course**! This guide is designed to help you master J
 * Event Handling
 * Layout Managers
 
-
 ## Projects & Practice
 
 ### 21. Mini Projects
@@ -146,6 +145,9 @@ Welcome to the **Java Full Course**! This guide is designed to help you master J
 ### 22. Final Project (Advanced)
 
 * Build a complete CRUD-based Web App using Java + MySQL
+
+
+---
 
 ### 23. Interview Preparation
 
