@@ -97,8 +97,6 @@ Count: 4
 Count: 5
 ```
 
----
-
 ## 3. `do-while loop`
 
 As you just saw, if the conditional expression controlling a **while** loop is initially false, then the body of the loop will not be executed at all. However, sometimes it is desirable to execute the body of a loop at least once, even if the conditional expression is false to begin with. In other words, there are times when you would like to test the termination expression at the end of the loop rather than at the beginning. Fortunately, Java supplies a loop that does just that: the **do-while**. The **do-while** loop always executes its body at least once, because its conditional expression is at the bottom of the loop. Its general form is
@@ -137,8 +135,6 @@ Number: 3
 Number: 4
 Number: 5
 ```
-
----
 
 ## 4. Enhanced For Loop (for-each loop)
 
