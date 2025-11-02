@@ -61,8 +61,23 @@ returnType functionName(parameters) {
        return n * n;  // returns an integer
    }
    ```
+### What happens in memory?
+ **Jab function chalta hai to memory me yeh hota hai:**
 
+1. **Program start hote hi** JVM sabse pehle `main()` function ko **stack memory** me load karta hai.
+2. Jab aap `new` likhte ho (jaise `new Scanner()`), tab **heap memory** me ek object banta hai, aur uska **address** stack me store hota hai.
+3. Jab aap **function call** karte ho, to ek **naya stack frame** banta hai jisme us function ke variables aur parameters store hote hain.
+4. Jab function ka kaam khatam hota hai, uska stack frame **delete** ho jata hai (memory free ho jati hai).
+5. Jab program pura khatam hota hai, to heap me bache huye unused objects ko **Garbage Collector** automatically delete kar deta hai.
 
+**Simple words me:**
+
+* Stack → short-term memory (for method calls & local variables)
+* Heap → long-term memory (for objects)
+* Function call → stack me naya box banta hai
+* Function return → box delete ho jata hai
+
+![Java Memory Diagram](./images/memory_management.png)
 
 ### (B) Based on Parameters
 
