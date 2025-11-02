@@ -8,7 +8,7 @@ Welcome to the **Java Full Course**! This guide is designed to help you master J
 
 | No. | Chapter Name | Description |
 |-----|---------------|-------------|
-| 0️ | [**Setting Up the Environment**](./0_Setting_Up_the_Environment/) | Learn how to install and configure Java, IDEs, and environment variables. |
+| 0️ | [**Setting Up the Environment**](./0_Setting%20Up%20the%20Environment/) | Learn how to install and configure Java, IDEs, and environment variables. |
 | 1️ | [**Introduction to Java**](./01_Introduction%20to%20Java/) | Understand Java basics, syntax, and structure of a simple program. |
 | 2️ | [**Variables**](./02_Variable/) | Learn about variables, constants, and data storage in Java. |
 | 3️ | [**Data Type**](./03_Data%20Type/) | Explore primitive and non-primitive data types in Java. |
