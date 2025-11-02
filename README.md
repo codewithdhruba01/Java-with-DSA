@@ -1,11 +1,3 @@
-# 📘 Java Full Course: Beginner to Advanced
-
-Welcome to the **Java Full Course**! This guide is designed to help you master Java programming from the very basics to advanced concepts. Follow each chapter step by step to become proficient in Java development.
-
-> 📖 Each chapter is organized with practical examples, explanations, and exercises to help you understand the concepts effectively.
-
----
-
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
@@ -43,6 +35,14 @@ Welcome to the **Java Full Course**! This guide is designed to help you master J
   - [23. Interview Preparation](#23-interview-preparation)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+# 📘 Java Full Course: Beginner to Advanced
+
+Welcome to the **Java Full Course**! This guide is designed to help you master Java programming from the very basics to advanced concepts. Follow each chapter step by step to become proficient in Java development.
+
+> 📖 Each chapter is organized with practical examples, explanations, and exercises to help you understand the concepts effectively.
+
+---
 
 ## 📑 Table of Contents
 <!-- toc -->
