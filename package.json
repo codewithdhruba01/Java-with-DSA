@@ -4,12 +4,7 @@
   "description": "Java with Data Structures and Algorithms",
   "author": "Dhrubaraj Pati",
   "main": "index.js",
-  "scripts": {
-    "start": "node index.js",
-    "gen": "doctoc README.md",
-    "audit:fix": "npm audit fix || true",
-    "clean": "rm -rf node_modules package-lock.json && npm install"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/codewithdhruba01/Java-with-DSA.git"
@@ -26,8 +21,5 @@
   "bugs": {
     "url": "https://github.com/codewithdhruba01/Java-with-DSA/issues"
   },
-  "homepage": "https://github.com/codewithdhruba01/Java-with-DSA#readme",
-  "devDependencies": {
-    "doctoc": "^2.2.1"
-  }
+  "homepage": "https://github.com/codewithdhruba01/Java-with-DSA#readme"
 }

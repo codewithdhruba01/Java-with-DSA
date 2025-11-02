@@ -1,40 +1,56 @@
+# java-interview-questions
+
+Frequently asked Java Interview questions
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [📘 Java Full Course: Beginner to Advanced](#-java-full-course-beginner-to-advanced)
-  - [📑 Table of Contents](#-table-of-contents)
-  - [📘 Course Structure](#-course-structure)
-  - [Basics of Java](#basics-of-java)
-    - [1. Introduction to Java](#1-introduction-to-java)
-    - [2. Setting Up the Environment](#2-setting-up-the-environment)
-    - [3. Java Basics](#3-java-basics)
-    - [4. Operators in Java](#4-operators-in-java)
-    - [5. Control Flow](#5-control-flow)
-  - [Object-Oriented Programming (OOP)](#object-oriented-programming-oop)
-    - [6. Classes and Objects](#6-classes-and-objects)
-    - [7. Inheritance](#7-inheritance)
-    - [8. Polymorphism](#8-polymorphism)
-    - [9. Encapsulation](#9-encapsulation)
-    - [10. Abstraction](#10-abstraction)
-  - [Core Java Concepts](#core-java-concepts)
-    - [11. Arrays and Strings](#11-arrays-and-strings)
-    - [12. Exception Handling](#12-exception-handling)
-    - [13. Java Collections Framework](#13-java-collections-framework)
-    - [14. File Handling](#14-file-handling)
-    - [15. Multithreading](#15-multithreading)
-  - [Advanced Java](#advanced-java)
-    - [16. Java JDBC (Database Connectivity)](#16-java-jdbc-database-connectivity)
-    - [17. Java Networking](#17-java-networking)
-    - [18. Lambda Expressions & Functional Programming](#18-lambda-expressions--functional-programming)
-    - [19. Java 8+ Features](#19-java-8-features)
-    - [20. Java GUI (Swing/JavaFX)](#20-java-gui-swingjavafx)
-  - [Projects & Practice](#projects--practice)
-    - [21. Mini Projects](#21-mini-projects)
-    - [22. Final Project (Advanced)](#22-final-project-advanced)
-  - [23. Interview Preparation](#23-interview-preparation)
+<h2 align="left">📚 Table of Contents</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>No.</th>
+      <th>Section</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td><a href="#-java-full-course-beginner-to-advanced">Java Full Course: Beginner to Advanced</a></td></tr>
+    <tr><td>2</td><td><a href="#-table-of-contents"> Table of Contents</a></td></tr>
+    <tr><td>3</td><td><a href="#-course-structure"> Course Structure</a></td></tr>
+    <tr><td>4</td><td><a href="#basics-of-java">Basics of Java</a></td></tr>
+    <tr><td>5</td><td><a href="#1-introduction-to-java">1. Introduction to Java</a></td></tr>
+    <tr><td>6</td><td><a href="#2-setting-up-the-environment">2. Setting Up the Environment</a></td></tr>
+    <tr><td>7</td><td><a href="#3-java-basics">3. Java Basics</a></td></tr>
+    <tr><td>8</td><td><a href="#4-operators-in-java">4. Operators in Java</a></td></tr>
+    <tr><td>9</td><td><a href="#5-control-flow">5. Control Flow</a></td></tr>
+    <tr><td>10</td><td><a href="#object-oriented-programming-oop">Object-Oriented Programming (OOP)</a></td></tr>
+    <tr><td>11</td><td><a href="#6-classes-and-objects">6. Classes and Objects</a></td></tr>
+    <tr><td>12</td><td><a href="#7-inheritance">7. Inheritance</a></td></tr>
+    <tr><td>13</td><td><a href="#8-polymorphism">8. Polymorphism</a></td></tr>
+    <tr><td>14</td><td><a href="#9-encapsulation">9. Encapsulation</a></td></tr>
+    <tr><td>15</td><td><a href="#10-abstraction">10. Abstraction</a></td></tr>
+    <tr><td>16</td><td><a href="#core-java-concepts">Core Java Concepts</a></td></tr>
+    <tr><td>17</td><td><a href="#11-arrays-and-strings">11. Arrays and Strings</a></td></tr>
+    <tr><td>18</td><td><a href="#12-exception-handling">12. Exception Handling</a></td></tr>
+    <tr><td>19</td><td><a href="#13-java-collections-framework">13. Java Collections Framework</a></td></tr>
+    <tr><td>20</td><td><a href="#14-file-handling">14. File Handling</a></td></tr>
+    <tr><td>21</td><td><a href="#15-multithreading">15. Multithreading</a></td></tr>
+    <tr><td>22</td><td><a href="#advanced-java">Advanced Java</a></td></tr>
+    <tr><td>23</td><td><a href="#16-java-jdbc-database-connectivity">16. Java JDBC (Database Connectivity)</a></td></tr>
+    <tr><td>24</td><td><a href="#17-java-networking">17. Java Networking</a></td></tr>
+    <tr><td>25</td><td><a href="#18-lambda-expressions--functional-programming">18. Lambda Expressions & Functional Programming</a></td></tr>
+    <tr><td>26</td><td><a href="#19-java-8-features">19. Java 8+ Features</a></td></tr>
+    <tr><td>27</td><td><a href="#20-java-gui-swingjavafx">20. Java GUI (Swing/JavaFX)</a></td></tr>
+    <tr><td>28</td><td><a href="#projects--practice">Projects & Practice</a></td></tr>
+    <tr><td>29</td><td><a href="#21-mini-projects">21. Mini Projects</a></td></tr>
+    <tr><td>30</td><td><a href="#22-final-project-advanced">22. Final Project (Advanced)</a></td></tr>
+    <tr><td>31</td><td><a href="#23-interview-preparation">23. Interview Preparation</a></td></tr>
+  </tbody>
+</table>
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 
 # 📘 Java Full Course: Beginner to Advanced
 
