@@ -1,0 +1,65 @@
+# ====================================
+# Node.js Project Ignore Rules
+# ====================================
+
+# Dependencies
+node_modules/
+package-lock.json
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Temporary files and caches
+dist/
+build/
+.cache/
+tmp/
+temp/
+*.tmp
+
+# VSCode and IDE config
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# Backup / Archive files
+*.bak
+*.old
+*.swp
+*.zip
+*.tar
+*.gz
+
+# Coverage reports and testing output
+coverage/
+.nyc_output/
+
+# GitHub Actions logs/cache
+.github/workflows/*.log
+
+# Miscellaneous
+*.iml
+
+# Optional — ignore local images (uncomment if not needed)
+# images/
+
+# ====================================
+# Project specific
+# ====================================
+# Ignore generated TOC backup (if any)
+README.md.bak
