@@ -2,6 +2,11 @@ import java.util.*;
 
 public class Factorial {
     public static void  calculateFactorial(int n) { // Function Definition
+
+        if (n < 0) { // Check for negative input
+            System.out.println("not defined for negative numbers.");
+            return;
+        }
         int factorial = 1;
         for (int i = n; i >= 1; i--) { // Loop to calculate factorial
             factorial = factorial * i;
