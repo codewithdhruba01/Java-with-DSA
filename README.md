@@ -2,6 +2,26 @@
 
 Welcome to the **Java Full Course**! This guide is designed to help you master Java programming from the very basics to advanced concepts. Follow each chapter step by step to become proficient in Java development.
 
+> 📖 Each chapter is organized with practical examples, explanations, and exercises to help you understand the concepts effectively.
+
+## 📘 Course Structure
+
+| No. | Chapter Name | Description |
+|-----|---------------|-------------|
+| 0️ | [**Setting Up the Environment**](./0_Setting_Up_the_Environment/) | Learn how to install and configure Java, IDEs, and environment variables. |
+| 1️ | [**Introduction to Java**](./01_Introduction%20to%20Java/) | Understand Java basics, syntax, and structure of a simple program. |
+| 2️ | [**Variables**](./02_Variable/) | Learn about variables, constants, and data storage in Java. |
+| 3️ | [**Data Type**](./03_Data%20Type/) | Explore primitive and non-primitive data types in Java. |
+| 4️ | [**Keywords**](./04_Keywords/) | Study Java keywords and their uses in programming. |
+| 5️ | [**Type Casting**](./05_Type%20Casting/) | Learn implicit and explicit type conversion in Java. |
+| 6️ | [**Operators**](./06_Operators/) | Understand arithmetic, relational, logical, and bitwise operators. |
+| 7️ | [**String**](./07_String/) | Explore Java String handling, methods, and immutability. |
+| 8️ | [**User Input**](./08_UserInput/) | Learn how to take user input using the Scanner class. |
+| 9️ | [**Conditional Statement**](./09_Conditional-Statement/) | Study `if`, `else`, and `switch` statements with examples. |
+| 10 | [**Loop**](./10_Loop/) | Learn about `for`, `while`, and `do-while` loops. |
+| 11 | [**Function**](./11_Function/) | Understand methods, parameters, and return values in Java. |
+
+
 ## Basics of Java
 
 ### 1. Introduction to Java
