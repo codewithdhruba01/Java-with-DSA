@@ -61,6 +61,37 @@ returnType functionName(parameters) {
        return n * n;  // returns an integer
    }
    ```
+
+![Java Method Difference](/images/difference.png)
+
+### Method :
+
+```java
+class MathExample {
+    // Method definition
+    public int add(int a, int b) {
+        return a + b;
+    }
+
+    public static void main(String[] args) {
+        MathExample obj = new MathExample();
+        System.out.println(obj.add(5, 3)); // Method call
+    }
+}
+```
+
+→ Ye **method** hai, kyunki ye ek **class (MathExample)** ke andar likha gaya hai.
+
+---
+
+### In Short:
+
+> Java me **function = method**,
+> bas farak ye hai ki **Java me sab kuch class ke andar hota hai**,
+> isliye “function” word ke jagah “method” use kiya jata hai.
+
+![Java Method Diagram](/images/method.png)
+
 ### What happens in memory?
  **Jab function chalta hai to memory me yeh hota hai:**
 
@@ -77,7 +108,7 @@ returnType functionName(parameters) {
 * Function call → stack me naya box banta hai
 * Function return → box delete ho jata hai
 
-![Java Memory Diagram](./images/memory_management.png)
+![Java Memory Diagram](/images/memory_management.png)
 
 ### (B) Based on Parameters
 
