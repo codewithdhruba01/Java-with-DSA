@@ -9,7 +9,6 @@ public class Factorial {
             factorial = factorial * i;
         }
         System.out.println("Factorial is: " + factorial);
-        return;
     }   
 
     public static void main(String args[]) { // Main Method
