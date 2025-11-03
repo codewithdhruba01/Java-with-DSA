@@ -46,17 +46,17 @@ int age = 20; // declared + initialized
 
 ## 3. Rules for Naming Variables
 
-✔ Allowed:
+ Allowed:
 
 * Start with a **letter, underscore (\_), or dollar sign (\$)**
 * Can contain **letters and numbers**
 * Case-sensitive (`age` and `Age` are different)
 
-❌ Not Allowed:
+ Not Allowed:
 
-* Starting with a number (`1age` ❌)
-* Using Java keywords (`class`, `int` ❌)
-* Spaces (`student age` ❌)
+* Starting with a number (`1age` )
+* Using Java keywords (`class`, `int` )
+* Spaces (`student age` )
 
 👉 Example of valid names:
 
