@@ -13,5 +13,7 @@ public class question {
         else {
             System.out.print("Odd");
         }
+        
     }
+    
 }
