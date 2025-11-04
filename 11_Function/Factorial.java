@@ -15,9 +15,10 @@ public class Factorial {
     }   
 
     public static void main(String args[]) { // Main Method
-        Scanner sc = new Scanner(System.in); // Scanner Object
+        try (Scanner sc = new Scanner(System.in)) { // Scanner Object
         System.out.print("Enter a number to find its factorial: "); 
         int n = sc.nextInt(); // Input Number
         calculateFactorial(n); // Function Call
     }
+}
 }
