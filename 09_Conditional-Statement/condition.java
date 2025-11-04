@@ -1,8 +1,8 @@
 import java.util.*;
 
-public class condition{
+public class Condition {
     public static void main (String args []){
-        Scanner sc = new Scanner(System.in);
+        try (Scanner sc = new Scanner(System.in)) {
         System.out.print("Enter your age: ");
         int age = sc.nextInt();
         if(age>=18){
@@ -13,4 +13,5 @@ public class condition{
         }
         sc.close();
     }
+}
 }
