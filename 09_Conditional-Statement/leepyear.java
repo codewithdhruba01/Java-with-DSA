@@ -1,9 +1,10 @@
 // Write a program to check wheather a number is leep year or not
 import java.util.Scanner;
 
-public class question3 {
+public class leepyear {
     public static void main (String[] args){
-        Scanner x = new Scanner(System.in);
+        try (Scanner x = new Scanner(System.in)) {
+
         System.out.print("Enter Year: ");
         int year = x.nextInt();
 
@@ -13,4 +14,5 @@ public class question3 {
             System.out.println(year + " is not a leap year.");
         }
     }
+}
 }

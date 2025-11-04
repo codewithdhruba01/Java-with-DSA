@@ -2,9 +2,10 @@
 
 import java.util.*;
 
-public class question2 {
+public class Greatest {
     public static void main(String[] args) {
-        Scanner sc = new Scanner (System.in);
+        try (Scanner sc = new Scanner(System.in)) {
+
 
         System.out.print("Enter First number: ");
         int num1 = sc.nextInt();
@@ -23,4 +24,5 @@ public class question2 {
             System.out.println(num3 + " is the largest number.");
         }
     }
+}
 }
