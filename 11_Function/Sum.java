@@ -8,7 +8,7 @@ public class Sum {
     }   
 
     public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
+        try (Scanner sc = new Scanner(System.in)) {
         System.out.print("Enter First numbers: ");
         int a = sc.nextInt();
         System.out.print("Enter Second Number: ");
@@ -17,4 +17,5 @@ public class Sum {
         int sum = calculateSum(a, b);
         System.out.println("Sum is 2 Number: " + sum);
     }
+}
 }
