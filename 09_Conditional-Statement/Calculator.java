@@ -1,10 +1,10 @@
-// Write a program in java to make a simple calculator using if else statement.
+// Write a program in java to make a simple Calculator using if else statement.
 
 import java.util.Scanner;
 
-public class question4 {
+public class Calculator {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        try (Scanner sc = new Scanner(System.in)) {
         System.out.print("Enter First Number: ");
         double num1 = sc.nextDouble();
 
@@ -14,7 +14,7 @@ public class question4 {
         System.out.print("Enter Operator: ");
         char operator = sc.next().charAt(0);
 
-        double result = 0;
+        double result;
 
           if (operator == '+') {
             result = num1 + num2;
@@ -38,4 +38,5 @@ public class question4 {
         System.out.println("The result is: " + result);
         sc.close();
     }
+}
 }
