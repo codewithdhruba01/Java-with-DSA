@@ -1,160 +1,328 @@
-# 🔹 What is a String in Java?
+# What is a String in Java?
 
 * A **String** is a **sequence of characters** (like text).
 * In Java, String is a **class** in `java.lang` package.
 * Strings are **immutable** → once created, they cannot be changed (new object is created if you modify it).
 
-👉 Example:
+Example:
 
 ```java
-String name = "Java Programming";
+String s = "Hello";
+```
+
+Internally memory me ye aise store hota hai:
+
+```
+H  e  l  l  o
+```
+
+Yani:
+
+```java
+char[] arr = {'H','e','l','l','o'};
+```
+
+But difference ye hai ki `String` ek **object** hai, normal array nahi.
+
+---
+
+## 2. String Immutable Kyu Hota Hai
+
+**Immutable** matlab — ek baar string ban gayi, uske characters **change nahi kar sakte**.
+
+### Reason (internally):
+
+* Jab tum likhte ho `String s = "Hello";`, to Java usse **String Pool** me store karta hai.
+* Agar koi aur likhta hai `String s2 = "Hello";`, to **wo same memory address** use karega.
+  (Java nayi memory allocate nahi karta)
+
+Agar string mutable hoti, to ek change dusre variable me bhi reflect ho jata — jo galat hota.
+
+Example:
+
+```java
+String s1 = "Java";
+String s2 = "Java"; // same memory pool location
+
+s1 = s1 + "Lang";  // new object banta hai
+```
+
+Yani `s1` ab ek **new object** point karta hai,
+`"JavaLang"` ke liye ek nayi memory allocate hoti hai.
+
+---
+
+## 3. String Pool (Interning) Concept
+
+Java memory ke andar ek **String Constant Pool (SCP)** hota hai.
+Ye heap ke andar ka ek special area hai jaha **unique strings** store hoti hain.
+
+Example:
+
+```java
+String a = "Hello";
+String b = "Hello";
+```
+
+Dono ka reference same hoga, kyunki `"Hello"` already pool me tha.
+Java firse naya object nahi banata.
+
+Lekin:
+
+```java
+String c = new String("Hello");
+```
+
+> Ye **heap me alag object** banata hai, pool me nahi.
+
+---
+
+## 4. Kaise String Compare Hoti Hai
+
+### (a) `==` Operator:
+
+Ye **reference address** check karta hai (yaani dono same memory location point karte hain ya nahi).
+
+```java
+String a = "Hello";
+String b = "Hello";
+System.out.println(a == b); // true (same pool object)
+```
+
+```java
+String x = new String("Hello");
+String y = new String("Hello");
+System.out.println(x == y); // false (different objects)
 ```
 
 ---
 
-# 🔹 How to Create Strings
+### (b) `equals()` Method:
 
-1. **Using String literal**
-
-   ```java
-   String s1 = "Hello";
-   ```
-
-   (stored in String pool, memory efficient)
-
-2. **Using new keyword**
-
-   ```java
-   String s2 = new String("Hello");
-   ```
-
-   (creates a new object in heap memory)
-
----
-
-# 🔹 String Concatenation
-
-Concatenation means **joining strings** together.
-
-### 1. Using `+` operator
+Ye **content (value)** compare karta hai, **address nahi**.
 
 ```java
-String first = "Java";
-String second = "Programming";
-String result = first + " " + second;
-System.out.println(result); // Java Programming
+System.out.println(x.equals(y)); // true
 ```
 
-### 2. Using `concat()` method
+Working internally:
 
 ```java
-String s1 = "Hello";
-String s2 = "World";
-String result = s1.concat(" ").concat(s2);
-System.out.println(result); // Hello World
-```
-
----
-
-# 🔹 Numbers and Strings
-
-When you use `+` with numbers and strings, Java behaves differently:
-
-👉 Example:
-
-```java
-int a = 10, b = 20;
-System.out.println(a + b);         // 30 (number addition)
-System.out.println("Sum: " + a+b); // Sum: 1020 (string concatenation)
-System.out.println("Sum: " + (a+b)); // Sum: 30 (because of brackets)
-```
-
-> Rule: If one operand is a **String**, `+` works as **concatenation** instead of addition.
-
----
-
-# 🔹 Special Characters in Strings
-
-Java uses **escape sequences** (with `\`) to represent special characters inside Strings.
-
-| Escape Sequence | Meaning      | Example Output                     |
-| --------------- | ------------ | ---------------------------------- |
-| `\n`            | New line     | "Hello\nWorld" → prints in 2 lines |
-| `\t`            | Tab space    | "Hello\tWorld" → Hello    World    |
-| `\"`            | Double quote | "She said "Hi"" → She said "Hi"    |
-| `\\`            | Backslash    | "C:\Java" → C:\Java                |
-| `\'`            | Single quote | 'I'm fine' → I'm fine              |
-
-👉 Example:
-
-```java
-public class SpecialChars {
-    public static void main(String[] args) {
-        System.out.println("Hello\nWorld");
-        System.out.println("She said \"Java is fun\"");
-        System.out.println("Path: C:\\Users\\Java");
+public boolean equals(Object obj) {
+    if (this == obj) return true; // same object
+    if (obj instanceof String) {
+        String another = (String) obj;
+        int n = value.length;
+        if (n == another.value.length) {
+            for (int i = 0; i < n; i++) {
+                if (value[i] != another.value[i]) return false;
+            }
+            return true;
+        }
     }
+    return false;
+}
+```
+
+> Matlab Java internally **character by character** comparison karta hai.
+
+
+### (c) `compareTo()` Method:
+
+Lexicographical (dictionary order) me compare karta hai.
+
+Internally working:
+
+* Har character ka **Unicode (ASCII)** value check hota hai.
+* Jaha difference milta hai, wahin comparison stop hota hai.
+
+Example:
+
+```java
+"hello".compareTo("chello");
+```
+
+Step by step:
+
+* 'h' (104) – 'c' (99) = +5
+  > positive → `"hello"` bada hai `"chello"` se.
+
+---
+
+## 5. Important Methods (with Theory)
+
+### (a) `length()`
+
+Returns number of characters.
+Internally:
+
+```java
+public int length() {
+    return value.length; // value[] = char array
 }
 ```
 
 ---
 
-# 🔹 Common String Methods
+### (b) `charAt(int index)`
 
-Java provides many useful methods in `String` class:
+Particular position ka character deta hai.
 
-| Method                 | Example                              | Output |
-| ---------------------- | ------------------------------------ | ------ |
-| `length()`             | `"Hello".length()`                   | 5      |
-| `toUpperCase()`        | `"java".toUpperCase()`               | JAVA   |
-| `toLowerCase()`        | `"JAVA".toLowerCase()`               | java   |
-| `charAt(index)`        | `"Hello".charAt(1)`                  | e      |
-| `substring(start,end)` | `"Programming".substring(0,4)`       | Prog   |
-| `equals()`             | `"java".equals("java")`              | true   |
-| `equalsIgnoreCase()`   | `"Java".equalsIgnoreCase("java")`    | true   |
-| `contains()`           | `"Java Programming".contains("Pro")` | true   |
-| `replace()`            | `"Java".replace("a","o")`            | Jovo   |
-| `trim()`               | `"   hello   ".trim()`               | hello  |
-
----
-
-# 🔹 Example Program (Covers All Concepts)
+Internally:
 
 ```java
-public class StringExample {
-    public static void main(String[] args) {
-        String name = "Java";
-        String lang = "Programming";
-
-        // Concatenation
-        String result = name + " " + lang;
-        System.out.println("Concatenation: " + result);
-
-        // Numbers and Strings
-        int a = 10, b = 20;
-        System.out.println("Without brackets: " + a + b); // 1020
-        System.out.println("With brackets: " + (a + b));  // 30
-
-        // Special Characters
-        System.out.println("Hello\nWorld");
-        System.out.println("She said \"Java is great!\"");
-
-        // Some String methods
-        System.out.println("Length: " + result.length());
-        System.out.println("Upper: " + result.toUpperCase());
-        System.out.println("Substring: " + result.substring(0,4));
-        System.out.println("Contains 'Pro': " + result.contains("Pro"));
-    }
+public char charAt(int index) {
+    return value[index];
 }
 ```
 
 ---
 
-# 🔹 Summary
+### (c) `substring(int start, int end)`
 
-1. Strings = sequence of characters, immutable.
-2. Create using **literal** or **new keyword**.
-3. Concatenation → `+` operator or `concat()` method.
-4. Numbers + Strings → if one is String, result is concatenation.
-5. Special characters → use escape sequences (`\n`, `\t`, `\"`, etc.).
-6. String class has many useful methods (`length()`, `substring()`, `toUpperCase()`, etc.).
+Original string ka ek part (new object) banata hai.
+
+Example:
+
+```java
+"HelloWorld".substring(0,5); // "Hello"
+```
+
+Internally:
+
+* Naya character array banata hai `[0..5)` tak ka part leke
+* Original string ko modify nahi karta
+
+---
+
+### (d) `concat(String str)`
+
+Dono strings ko jodta hai, aur ek **new String object** banata hai.
+
+```java
+"Hello".concat("World"); // new object "HelloWorld"
+```
+
+---
+
+### (e) `replace(old, new)`
+
+Har character ya substring ko replace karta hai.
+Internally ek **loop** chalake new string banata hai.
+
+---
+
+### (f) `trim()`
+
+Remove karta hai **leading aur trailing spaces** (beech ke spaces nahi).
+
+Example:
+
+```java
+"  Java  ".trim(); // "Java"
+```
+
+---
+
+### (g) `split(String regex)`
+
+String ko **array of strings** me todta hai (regex ke base pe).
+
+```java
+String s = "A,B,C";
+String[] arr = s.split(",");
+```
+
+Internally ye regex pattern se matching karke ek array return karta hai.
+
+---
+
+### (h) `toUpperCase()` / `toLowerCase()`
+
+Character ke Unicode values convert karta hai:
+
+* 'a' (97) → 'A' (65)
+* 'b' (98) → 'B' (66)
+
+---
+
+### (i) `contains(CharSequence seq)`
+
+String me substring present hai ya nahi check karta hai.
+Internally `indexOf(seq) != -1` check karta hai.
+
+---
+
+### (j) `matches(String regex)`
+
+Regex ke pattern ke against pura string match karta hai.
+Ye internally `Pattern` aur `Matcher` class use karta hai.
+
+---
+
+## 6. StringBuilder / StringBuffer (Mutable Strings)
+
+### Problem:
+
+`String` immutable hone ki wajah se har modification nayi memory banata hai.
+
+Example:
+
+```java
+String s = "Hello";
+s = s + "World"; // new object banta hai
+```
+
+### Solution:
+
+Use **StringBuilder** ya **StringBuffer**.
+
+Ye dono internally ek **char[] array** rakhte hain, jisme content change hota hai bina naya object banaye.
+
+Example:
+
+```java
+StringBuilder sb = new StringBuilder("Hello");
+sb.append(" World");
+System.out.println(sb); // Hello World
+```
+
+Internally:
+
+* Same char[] array me “ World” characters add ho jate hain.
+* Memory efficient & fast.
+
+---
+
+## 7. String Internally Kaise Store Hoti Hai
+
+Simplified internal structure:
+
+```java
+public final class String implements java.io.Serializable, Comparable<String> {
+    private final char value[]; // actual character array
+    private final int hash;     // cache for hashcode
+}
+```
+
+* `value[]` → store karta hai characters
+* `hash` → ek baar calculate hone ke baad cache hota hai (performance ke liye)
+
+---
+
+## 8. Summary Table
+
+| Concept       | Description                    | Working                      |
+| ------------- | ------------------------------ | ---------------------------- |
+| Immutable     | Once created, can’t be changed | New object created on change |
+| ==            | Compare memory address         | Same reference or not        |
+| equals()      | Compare content                | Character by character       |
+| compareTo()   | Dictionary order               | Unicode subtraction          |
+| concat()      | Join strings                   | Creates new object           |
+| substring()   | Part of string                 | Creates new object           |
+| length()      | Returns size                   | value[].length               |
+| trim()        | Remove spaces                  | Iterates from both ends      |
+| split()       | Divide by regex                | Returns string array         |
+| toUpperCase() | Convert to upper case          | Unicode conversion           |
+| StringBuilder | Mutable version                | Changes same object          |
+| String Pool   | Memory optimization            | Reuses literals              |
