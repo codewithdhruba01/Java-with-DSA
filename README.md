@@ -28,6 +28,16 @@ Welcome to the **Java Full Course**! This guide is designed to help you master J
 | 9️ | [**Conditional Statement**](./09_Conditional-Statement/) | Study `if`, `else`, and `switch` statements with examples. |
 | 10 | [**Loop**](./10_Loop/) | Learn about `for`, `while`, and `do-while` loops. |
 | 11 | [**Function**](./11_Function/) | Understand methods, parameters, and return values in Java. |
+| 12 | [**Arrays**](./12_Arrays/) | Learn about one-dimensional arrays, initialization, and operations.                                   |
+| 13 | [**2D Arrays**](./13_2D_Arrays/) | Understand two-dimensional arrays, matrix operations, and traversal.                                  |
+| 14 | [**Binary Number System**](./14_Binary_NumberSystem/) | Explore binary, decimal, and octal conversions with examples.                                         |
+| 15 | [**OOPS**](./15_OOPS/) | Learn Object-Oriented concepts: Class, Object, Inheritance, Polymorphism, Abstraction, Encapsulation. |
+
+---
+
+Agar chaho to me **har chapter ka full content + code examples** bhi generate kar sakta hoon.
+
+
 
 ---
 
