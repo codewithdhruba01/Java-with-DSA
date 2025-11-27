@@ -146,3 +146,54 @@ Student student3 = new Student("Pramod", "IIT");
 **Instantiation:** The new keyword is a Java operator that creates the object.
 
 **Initialization:** The new operator is followed by a call to a constructor, which initializes the new object.
+
+## Declaring a Variable to Refer to an Object 
+
+**General syntax:**
+```java
+type name;
+```
+This notifies the compiler that you will use a name to refer to data whose type is a type. With a primitive variable, this declaration also reserves the proper amount of memory for the variable. 
+
+> From the above program, we can declare variables to refer to an object as: 
+
+```java
+Student student;
+Student student2;
+Student student3;
+```
+
+### Instantiating a Class
+
+The new operator instantiates a class by allocating memory for a new object and returning a reference to that memory. The new operator also invokes the object constructor.
+
+**For example:**
+```java
+Student student = new Student("Ramesh", "BVB");
+Student student2 = new Student("Prakash", "GEC");
+Student student3 = new Student("Pramod", "IIT");
+```
+**Note that we have used a new keyword to create Student objects.**
+
+### Initializing an Object
+The new keyword is followed by a call to a constructor, which initializes the new object. For example:
+
+```java
+Student student = new Student("Ramesh", "BVB");
+Student student2 = new Student("Prakash", "GEC");
+Student student3 = new Student("Pramod", "IIT");
+```
+
+> From above code will call below constructor in Student class.
+```java
+public class Student { 
+    private String name; 
+    private String college; 
+
+    public Student(String name, String college) { 
+        super(); 
+        this.name = name; 
+        this.college = college; 
+    } 
+}
+```
