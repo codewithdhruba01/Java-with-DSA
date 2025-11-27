@@ -11,7 +11,7 @@ The core OOPs concepts:
 
 > Let's discuss above each OOPS concepts with a real-world example.
 
-## 1. Object : 
+# 1. Object : 
 The Object is the real-time entity having some state and behavior. In Java, Object is an instance of the class having the instance variables like the **state** of the object and the **methods** as the behavior of the object. The object of a class can be created by
 using the `new` keyword in Java Programming language.
 
@@ -87,9 +87,7 @@ public class Main {
 }
 ```
 
----
-
-#  Output
+###  Output
 
 ```
 Tata Car Started
@@ -195,5 +193,53 @@ public class Student {
         this.name = name; 
         this.college = college; 
     } 
+}
+```
+# 2. Class
+
+A class is a group of objects which have common properties. It is a template or blueprint from which objects are created. In short, a class is the **specification or template of an object**.
+
+A real-world example is **Circle**. Let’s look at an example of a class and analyze its various parts in a below diagram. This example declares the class **Circle**, which has the member variables x, y, and radius of type Integer and the two member methods, `area()` and `fillColor()`.
+
+```java
+class Circle{  // class: Keyword, Circle: Class name
+    int x, y, radius; //Member Variable
+
+    void area() {
+        //method body
+    }
+    void fillColor(){ //Member Methods
+    }
+}
+```
+
+
+### Class Example with Constructor
+
+```java
+class Mobile {
+
+    String brand;
+    int price;
+
+    // Constructor
+    Mobile(String b, int p) {
+        brand = b;
+        price = p;
+    }
+
+    void showDetails() {
+        System.out.println("Brand: " + brand + ", Price: " + price);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Mobile m1 = new Mobile("Samsung", 25000);
+        Mobile m2 = new Mobile("iPhone", 80000);
+
+        m1.showDetails();
+        m2.showDetails();
+    }
 }
 ```
