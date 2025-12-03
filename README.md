@@ -4,13 +4,9 @@ Welcome to the **Java Full Course**! This guide is designed to help you master J
 
 > 📖 Each chapter is organized with practical examples, explanations, and exercises to help you understand the concepts effectively.
 
----
-
 ## 📑 Table of Contents
 <!-- toc -->
 <!-- tocstop -->
-
----
 
 ## 📘 Course Structure
 
